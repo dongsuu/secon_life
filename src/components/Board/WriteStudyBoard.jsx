@@ -16,9 +16,9 @@ const WriteFreeBoard = ({boardService}) => {
   const auth = getAuth();
 
   const navigate = useNavigate();
-  const gotoFreeBoard = () => {
+  const gotoStudyBoard = () => {
     navigate({
-      pathname:'/FreeBoard',
+      pathname:'/StudyBoard',
     })
   }
 
@@ -28,7 +28,7 @@ const WriteFreeBoard = ({boardService}) => {
       setUserid(user.uid);
     } else {
       alert("로그인 해주세요 !!");
-      gotoFreeBoard();
+      gotoStudyBoard();
       // No user is signed in.
     }
   }
@@ -56,8 +56,8 @@ const WriteFreeBoard = ({boardService}) => {
   // When user press the complete button 
   const completeWrite = async (event) => {
       event.preventDefault();
-      await boardService.storeArticle(title,content,userid,usernickname,1); // Store post in DB
-      gotoFreeBoard();
+      await boardService.storeArticle(title,content,userid,usernickname,2); // Store post in DB
+      gotoStudyBoard();
   }
 
   // Get user input.
@@ -73,7 +73,7 @@ const WriteFreeBoard = ({boardService}) => {
       <div>
         <form>
           <div>
-          <h1 className={styles.freeboard_text}>자유게시판 - 글쓰기</h1> <hr />
+          <h1 className={styles.freeboard_text}>스터디게시판 - 글쓰기</h1> <hr />
           <label className={styles.title_label}>제목</label>
           <input className={styles.title_input}type="text" onChange={getTitle} placeholder = "제목을 입력해 주세요."></input>
           </div>

@@ -1,13 +1,15 @@
 import { BrowserRouter, Route, Routes } from 'react-router-dom';
 import './App.css';
 import Home from './components/Home.jsx';
-import Login from './components/Login.jsx';
-import Lhome from './components/Lhome.jsx';
-import Create from './components/Create.jsx';
+import Login from './components/Login/Login';
+import Lhome from './components/Login/Lhome.jsx';
+import Create from './components/Login/Create.jsx';
 import FreeBoard from './components/Board/FreeBoard';
 import WriteFreeBoard from './components/Board/WriteFreeBoard';
-import FreeBoardDetails from './components/Board/FreeBoardDetails';
-import UpdateFreeBoardPost from './components/Board/UpdateFreeBoardPost';
+import BoardDetails from './components/Board/BoardDetails';
+import UpdateBoardPost from './components/Board/UpdateBoardPost';
+import StudyBoard from './components/Board/StudyBoard';
+import WriteStudyBoard from './components/Board/WriteStudyBoard';
 
 function App({authService, boardService}) {
   return (
@@ -19,8 +21,10 @@ function App({authService, boardService}) {
         <Route path='/Create' element={<Create authService={authService}/>}></Route>
         <Route path='/FreeBoard' element={<FreeBoard />}></Route>
         <Route path='/WriteFreeBoard' element={<WriteFreeBoard boardService={boardService}/>}></Route>
-        <Route path='FreeBoardDetails' element={<FreeBoardDetails boardService={boardService} />}></Route>
-        <Route path='UpdateFreeBoardPost'element={<UpdateFreeBoardPost />}></Route>
+        <Route path='BoardDetails' element={<BoardDetails boardService={boardService} />}></Route>
+        <Route path='UpdateBoardPost'element={<UpdateBoardPost />}></Route>
+        <Route path='StudyBoard' element={<StudyBoard />}></Route>
+        <Route path='/WriteStudyBoard' element={<WriteStudyBoard boardService={boardService}/>}></Route>
       </Routes>
       </BrowserRouter>
     </div>

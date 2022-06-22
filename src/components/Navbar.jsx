@@ -12,6 +12,11 @@ const gotoFreeBoard = () =>{
   });
 }
 
+const gotoStudyBoard = () =>{
+  navigate({
+    pathname: '/StudyBoard',
+  });
+}
   return (
     <div>
       <div className={styles.navBar} >
@@ -32,7 +37,7 @@ const gotoFreeBoard = () =>{
           <div className={styles.board}>
             <ul>
               <li className={styles.boardlist} onClick ={gotoFreeBoard}>자유게시판</li>
-              <li className={styles.boardlist}>스터디게시판</li>
+              <li className={styles.boardlist} onClick={gotoStudyBoard}>스터디게시판</li>
               <li className={styles.boardlist}>취미게시판</li>
             </ul>
           </div>

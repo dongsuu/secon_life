@@ -7,7 +7,7 @@ import { doc, deleteDoc } from "firebase/firestore";
 import {db} from "../../service/firestore";
 
 
-function FreeBoardDetails() {
+function BoardDetails() {
   const {state} = useLocation();
   const [isMine, setIsmine] = useState(false); 
   const navigate = useNavigate();
@@ -15,7 +15,7 @@ function FreeBoardDetails() {
   // Navigate
   const gotoUpdatePost = () => {
     navigate(
-      '/UpdateFreeBoardPost',
+      '/UpdateBoardPost',
       {state: state},
     )
   }
@@ -66,4 +66,4 @@ function FreeBoardDetails() {
   );
 }
 
-export default FreeBoardDetails;
+export default BoardDetails;

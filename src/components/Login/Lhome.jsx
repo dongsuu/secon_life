@@ -1,10 +1,10 @@
 import React from 'react';
-import Navbar from './Navbar';
+import Navbar from '../Navbar';
 import { useNavigate} from 'react-router-dom';
 import { getAuth, onAuthStateChanged } from "firebase/auth";
 import { useState, useEffect } from 'react';
 import { getDoc,doc } from "firebase/firestore"; 
-import { db } from "../service/firestore";
+import { db } from "../../service/firestore";
 
 const Lhome = ({authService}) =>  {
   const navigate = useNavigate();

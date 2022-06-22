@@ -1,15 +1,15 @@
 import React from 'react';
-import styles from './FreeBoardList.module.css';
+import styles from './BoardList.module.css';
 import {useNavigate} from 'react-router-dom';
 import {useState, useEffect} from 'react';
-import FreeBoardDetails from './FreeBoardDetails';
+import BoardDetails from './BoardDetails';
 
-function FreeBoardList(props) {
+function BoardList(props) {
   const navigate = useNavigate();
 
   const gotoFreeBoardDetails = () => {
     navigate(
-      '/FreeBoardDetails',
+      '/BoardDetails',
       {state: props.post}
     )
   }
@@ -31,4 +31,4 @@ function FreeBoardList(props) {
   );
 }
 
-export default FreeBoardList;
+export default BoardList;

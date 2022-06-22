@@ -3,7 +3,7 @@ import { collection, addDoc, getDoc, setDoc, doc, Timestamp, updateDoc, arrayUni
 
 class BoardService{
 
-  async storeArticle(title, content, uid, unickname){
+  async storeArticle(title, content, uid, unickname, category){
     console.log(unickname);
     const userDocRef = doc(db,"users",uid);
    // const docRef = doc(db, "users",uid);
@@ -18,7 +18,7 @@ class BoardService{
         title: title, //string
         content: content, //string
         user_nickname: unickname, 
-        //category: , //enum
+        category: category,
       });
       console.log(docRef.id);
       updateDoc(userDocRef,{
