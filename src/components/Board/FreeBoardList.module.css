@@ -1,0 +1,22 @@
+.article{
+  align-items:center;
+  width:90%;
+  height:100%;
+  border: 1px solid lightgray;
+  margin-bottom: 1em;
+  cursor: pointer;
+}
+
+.post :hover{
+  transform: scale(1.05);
+  transition: 250ms ease-in;
+}
+
+.post{
+  display:flex;
+  flex-direction: column;
+  list-style:none;
+}
+.title{
+  margin:0;
+}

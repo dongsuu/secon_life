@@ -1,0 +1,86 @@
+.navBar{
+  display:flex;
+  height:4rem;
+  padding: 2em 1em;
+  justify-content: center;
+  align-items: center;
+  background-color: antiquewhite;
+
+}
+.logo{
+  align-items: center;
+  margin-right:1em;
+  width: 50px;
+  height: 50px;
+}
+.menu{
+  display: grid;
+  grid-template-columns: 200px 200px 200px;
+  list-style-type: none;
+  background-color: antiquewhite;
+  cursor: pointer;
+}
+.notice{
+  list-style-type: none;
+  opacity: 0;
+}
+.notice li{
+  display: flex;
+  flex-direction: column;
+}
+.board{
+  list-style-type: none;
+  padding:10;
+  margin:10;
+  opacity:0;
+}
+.board li{
+  display:flex;
+  flex-direction: column;
+}
+.boardlist:hover {
+  transform: scale(1.15);
+  font-weight: 1000;
+  color: royalblue;
+  transition: all 0.2s ease-out;
+}
+.noticelist:hover {
+  transform: scale(1.15);
+  font-weight: 1000;
+  color: royalblue;
+  transition: all 0.2s ease-out;
+}
+.m:hover .notice{
+  transform: scale(1.05);
+  transition: all 0.2s ease-out;
+  opacity:1;
+}
+.m:hover .board{
+  transform: scale(1.05);
+  transition: all 0.2s ease-out;
+  opacity:1;
+}
+.menu1:hover .notice{
+  transform: scale(1.05);
+  transition: all 0.2s ease-out;
+  opacity:1;
+}
+.menu2:hover .board{
+  transform: scale(1.05);
+  transition: all 0.2s ease-out;
+  opacity:1;
+}
+.search{
+  background-color: antiquewhite;
+}
+.text{
+  flex-basis: 100%;
+  font-size:1.2rem;
+  outline:0;
+  width:300px;
+  height:50px;
+}
+.btn{
+  outline:0;
+  height:50px;
+}

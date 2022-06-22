@@ -1,0 +1,25 @@
+.title_label{
+  font-size: 1.2em;
+  margin: 10px;
+}
+.title_input{
+  width: 500px;
+  height: 30px;
+  margin: 10px;
+}
+.content_label{
+  position:relative;
+  top: -500px;
+  font-size: 1.2em;
+  margin: 10px;
+}
+.content_input{
+  width:500px;
+  height: 500px;
+  margin: 10px;
+}
+
+.complete_btn{
+  width:80px;
+  height:30px;
+}
