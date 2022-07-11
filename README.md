@@ -1,6 +1,6 @@
 # 4050 Community Service
 
-This project focused on 40~60 people.
+This project focused on 40~50 people.
 You can create, read, update, delete posts. 
 ------
 # 프로젝트 계기
