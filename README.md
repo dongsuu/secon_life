@@ -2,7 +2,7 @@
 
 This project focused on 40~60 people.
 You can create, read, update, delete posts. 
-
+------
 # 프로젝트 계기
 
 최근 어플리케이션들을 살펴보면 20~30 대에 맞추어 제작되어있는 것들이 많다. 
